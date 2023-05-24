@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>
+            first website
+        </title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <h2 >this is first website</h2>
+        <p id="special2">Lorem ipsum, dolor sit amet consectetur <br>
+            adipisicing elit. Atque reiciendis assumenda, illum <br> illo tempora qui quibusdam quae dolores voluptatibus aliquam
+             eveniet quas ex sit totam porro? Magnam ipsum maiores incidunt.</p>
+    
+    
+
+        <div id="special">
+            <p>Lorem ipsum dolor <strong>sit amet consectetur adipisicing elit</strong> . Expedita quasi aperiam nihil obcaecati tenetur aspernatur ullam cumque accusantium laudantium, ipsum atque odit dolore perspiciatis eaque, placeat sapiente ducimus eius amet?</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit.</strong>  Commodi assumenda odio molestiae atque iusto vel obcaecati totam error expedita ratione itaque explicabo, a quasi suscipit veniam ipsa soluta quia enim.</p>
+    
+        <ul>
+            <li><a href="https://www.google.com/">Visit google</a></li>
+            <li><a href="https://www.google.com/search?q=facebook&sxsrf=APwXEdc3YqRZ6TE3IkQ0yLksDGE7O8L2xg%3A1684832065942&source=hp&ei=QX9sZMu-N8TWhwPz94OoDg&iflsig=AOEireoAAAAAZGyNUTasdbubgbOVoPQ_djh9qJsniR0s&gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&oq=face&gs_lcp=Cgdnd3Mtd2l6EAMYATIHCCMQigUQJzIRCC4QgwEQxwEQsQMQ0QMQgAQyEAgAEIAEEBQQhwIQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATIFCAAQgAQyCwgAEIoFELEDEIMBMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBOgQIIxAnOhMILhCKBRCxAxCDARDHARDRAxBDOhEILhCABBCxAxCDARDHARDRAzoLCC4QgwEQsQMQgAQ6CAgAEIAEELEDOgsILhCABBCxAxCDAVAAWPsCYNQWaABwAHgAgAGmAogB-AaSAQUwLjIuMpgBAKABAQ&sclient=gws-wiz">facebbok</a></li>
+            <li><a href="https://www.youtube.com/">youtube</a></li>
+        </ul>
+        <h4>this is h4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem maxime impedit consequatur, pariatur at unde repellat consequuntur eaque itaque nisi! Repellat perferendis reprehenderit voluptates quae eveniet ad porro aliquam!</p>
+        <ul>
+            <li>mango</li>
+            <li>
+                <ol>
+                    <li>banana</li>
+                    <li>oranges</li>
+                   
+                </ol>
+            </li>
+            
+
+            <li>apple</li>
+        </ul>
+        <h4>this is another h4</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ipsa voluptas quam labore, sed a natus? Repudiandae placeat, culpa minima explicabo aspernatur suscipit, laboriosam expedita nesciunt cum distinctio omnis provident.</p>
+        
+
+        <h5>psuedo selector</h5>
+        <div></div>
+        <br>
+        <br>
+        <br>
+        <button>Submit</button>
+        <br>
+        <br>
+        <input type="text" placeholder="search something">
+        <br>
+        <br>
+        <br>
+        <ol>
+            <li>mango</li>
+            <li>apple</li>
+            <li>banana</li>
+            <li>orange</li>
+            <li>grapes</li>
+        </ol>
+        <h1>this is css</h1>
+    </body>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</html>
+
+
+
+
+
+h2{
+    color: brown;
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+#special2{
+    text-transform: uppercase;
+    border: 5px solid black;
+    width: 500px;
+}
+
+
+#special strong{
+    color: red;
+}
+
+ul li ol li{
+    color:blue;
+}
+
+ul>li{
+    color: brown;
+}
+
+
+h4+p{
+    background-color: lightgreen;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 2px solid black;
+}
+
+div:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+
+h5:active{
+    background-color: aquamarine;
+}
+
+button{
+    border-radius: 20%;
+    border: 2px solid black;
+    background-color: palevioletred;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+
+input:focus{
+    cursor: pointer;
+}
+
+ul a:visited{
+    color: green;
+}
+
+h1::after{
+    content:"form css";
+}
+
+
+section div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 50px;
+}
