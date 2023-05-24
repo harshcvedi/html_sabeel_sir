@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            first website
+        </title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+
+    <body>
+        <h1>static position</h1>
+       <section id="static">
+        <div style="background-color: lightcoral;"></div>
+        <div id="middle" style="background-color: lightgreen;"></div>
+        <div style="background-color: lightblue;"></div>
+       </section>
+
+       <h1>relative position</h1>
+       <section id="relative">
+        <div style="background-color: lightcoral;"></div>
+        <div id="middle1" style="background-color: lightgreen;"></div>
+        <div style="background-color: lightblue;"></div>
+       </section>
+
+
+       <h1>absolute position</h1>
+       <section id="absolute">
+        <div style="background-color: lightcoral;"></div>
+        <div id="middle2" style="background-color: lightgreen;"></div>
+        <div style="background-color: lightblue;"></div>
+       </section>
+
+
+       <h1>fixed position</h1>
+       <section id="fixed">
+        <div style="background-color: lightcoral;"></div>
+        <div id="middle3" style="background-color: lightgreen;"></div>
+        <div style="background-color: lightblue;"></div>
+       </section>
+
+
+      
+    </body>
+</html>
+
+
+//css
+
+
+div{
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    display: inline-block;
+
+}
+
+#static #middle{
+    position: static; 
+    top: 15px;
+    right: 20px;
+    left: 16px;
+    bottom: 20px;/*no offset will work it is default value*/
+
+}
+
+#relative #middle1{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+#absolute #middle2{
+    position: absolute;
+}
+
+#fixed #middle3
+{
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
