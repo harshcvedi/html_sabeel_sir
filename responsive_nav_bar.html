@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            first website
+        </title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+
+    <body>
+        <nav>
+            <a href="#">Home</a>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#">SignUp</a>
+        </nav>
+
+
+        
+    </body>
+</html>
+
+//css
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width:400px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    padding: 14px 0px;
+}
+
+
+@media all and (max-width:480px){
+    nav{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
