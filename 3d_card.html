@@ -1,0 +1,86 @@
+body{
+    perspective: 800px;
+}
+
+div{
+    height: 250px;
+    width: 400px;
+    border: 1px solid #ccc;
+   
+}
+
+
+.wrapper{
+    position: relative;
+    transition: 1s;
+    margin: 30px auto;
+    transform-style: preserve-3d;
+
+}
+.sideA{
+    background-color: lightcoral;
+   
+    z-index:1;
+
+}
+
+.sideB{
+    background-color: lightgreen;
+    transform: rotateY(180deg);
+    padding: 16px;
+    
+   
+}
+
+.sideA,.sideB{
+    position: absolute;
+    
+    backface-visibility: hidden;
+}
+
+
+
+.wrapper:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.sideA img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+//html
+
+
+<html>
+    <head>
+        <title>
+            first website
+        </title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+
+    <body>
+
+       <div class="wrapper">
+            <div class="sideA">
+                <img src="https://images.unsplash.com/photo-1683967070495-2ef46fa4336e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="sideB">
+                <h2>this is heading</h2>
+                <p>Lorem ipsum dolor, sit amet consecteturat. Et, quae tenetur. Ad, voluptatibus cupiditate fugit corporis sequi eum debitis nisi. Facilis ad culpa, sed sunt quis quam adipisci inventore hic?
+                Deserunt dignissimos ut distinctio numquam eum alias sequi porro, commodi error tenetur perspiciatis excepturi? Saepe dicta, itaque officiis exercitationem inventore corporis facilis veritatis accusantium vero error earum ullam molestias assumenda! Lorem ipsum dolor sequuntur n delectus aliquam dolorem dolor sit repudiandae?</p>
+            </div>
+       </div>
+            
+
+
+
+        
+    </body>
+</html>
