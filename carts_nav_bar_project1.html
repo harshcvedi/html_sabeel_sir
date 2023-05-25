@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width:400px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    padding: 14px 0px;
+}
+
+
+@media all and (max-width:480px){
+    nav{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+section{
+    width: 75vw;
+    margin: 50px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    width: 350px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 15px;
+    transition: 200ms;
+    box-shadow: 0px 0px 10px rgb(104, 104, 104);
+}
+
+figure img{
+    height: 250px;
+    width: 250px;
+    padding: 8px;
+}
+
+button{
+    font-size: 20px;
+   padding: 3px 10px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   border: 1px solid #ccc;
+   transition: 100ms;
+
+}
+
+button:hover{
+    background-color: lightcoral;
+    color: white;
+
+}
+
+figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+
+
+//html
+
+
+
+
+<html>
+    <head>
+        <title>
+            first website
+        </title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="#">Home</a>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#">SignUp</a>
+        </nav>
+
+        <main>
+            <section>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aSUyMHBob25lJTIwMTF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <figcaption>
+                    <h2>Iphone 11</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus placeat adipisci exercitationem delectus. Cum rem maxime, earum aliquid, enim repellat atque adipisci!</p>
+                    <h2>Price: $300</h2>
+                    <button>Buy Now</button>
+                    </figcaption>
+                    
+                    
+                
+                </figure>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <figcaption>
+                    <h2>macbook</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus placeat adipisci exercitationem delectus. Cum rem maxime, earum aliquid, enim repellat atque adipisci!</p>
+                    <h2>Price: $500</h2>
+                    <button>Buy Now</button>
+                    </figcaption>
+                    
+                    
+                
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
+                    <figcaption>
+                    <h2>laptop</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus placeat adipisci exercitationem delectus. Cum rem maxime, earum aliquid, enim repellat atque adipisci!</p>
+                    <h2>Price: $400</h2>
+                    <button>Buy Now</button>
+                    </figcaption>
+                    
+                    
+                
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1619037961428-e6410a7afd38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <figcaption>
+                    <h2>smartwatch</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus placeat adipisci exercitationem delectus. Cum rem maxime, earum aliquid, enim repellat atque adipisci!</p>
+                    <h2>Price: $60</h2>
+                    <button>Buy Now</button>
+                    </figcaption>
+                    
+                    
+                
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <figcaption>
+                    <h2>macbook</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus placeat adipisci exercitationem delectus. Cum rem maxime, earum aliquid, enim repellat atque adipisci!</p>
+                    <h2>Price: $500</h2>
+                    <button>Buy Now</button>
+                    </figcaption>
+                    
+                    
+                
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <figcaption>
+                    <h2>macbook</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus placeat adipisci exercitationem delectus. Cum rem maxime, earum aliquid, enim repellat atque adipisci!</p>
+                    <h2>Price: $500</h2>
+                    <button>Buy Now</button>
+                    </figcaption>
+                    
+                    
+                
+                </figure>
+                
+            </section>
+        </main>
+
+
+
+        
+    </body>
+</html>
