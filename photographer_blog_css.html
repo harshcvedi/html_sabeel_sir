@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>
+            first website
+        </title>
+        <link rel="stylesheet" href="style3.css">
+        <script src="https://kit.fontawesome.com/063ba1eef8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-camera"></i>Images</a></li>
+            </ul>
+        </nav>
+
+
+
+        <main>
+            <section id="container">
+                <div style="background-color: lightgreen;">
+                
+                <img src="https://media.istockphoto.com/id/1283369288/photo/the-java-sparrow-lonchura-oryzivora-also-known-as-java-finch-java-rice-sparrow-or-java-rice.webp?b=1&s=170667a&w=0&k=20&c=hy2fwQzMB92q2ybSF44H95At9rDVAqz8JIfzc0CrYRc=" alt="">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+                <div style="background-color: lightblue;">
+                    <img src="https://media.istockphoto.com/id/183955347/photo/water-lily.webp?b=1&s=170667a&w=0&k=20&c=rvOyP-lsDjdGVEOppjp7fgW9b4X-yNUxebz54UufGfM=" alt="">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div style="background-color:lightcoral;">
+                <img src="https://media.istockphoto.com/id/478541483/photo/panama-de-fortuna-national-park.webp?b=1&s=170667a&w=0&k=20&c=JN_SptQSPbiWlJbW_b_fhh8SRD3GFVYj7Vtd2udaTbg=" alt="">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+                
+                <div style="background-color: lightpink;">
+                
+    
+                    <img src="https://media.istockphoto.com/id/1026800270/photo/olive-garden-in-shodoshima-island-japan.webp?b=1&s=170667a&w=0&k=20&c=lC0S8GpruYRXDkMFnLL0tnG8XPbjFfKEfSxGLcj4WDo=" alt="">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div style="background-color: lightskyblue;">
+                <img src="https://media.istockphoto.com/id/1283369279/photo/the-java-sparrow-lonchura-oryzivora-also-known-as-java-finch-java-rice-sparrow-or-java-rice.webp?b=1&s=170667a&w=0&k=20&c=r5h6rxAUH5D9EF2fhtsz3iP0UMz6OuRRQiT1J4xQdfI=" alt="">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+                <div style="background-color: lightsalmon;">
+                
+                
+                <img src="https://media.istockphoto.com/id/538041456/photo/naturer-background.webp?b=1&s=170667a&w=0&k=20&c=lZDYTcZMt5cT4xwBsrTJEyDapZ3vM5jc5jNknZc0qQE=" alt="">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+    
+            </section>
+        </main>
+
+        
+
+
+        
+    </body>
+</html>
+
+
+
+
+//css
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 75vw;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 20px;
+    grid-auto-rows: 230px;
+
+
+}
+
+div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
+div img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+    filter: grayscale(80%);
+}
+
+nav ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: black;
+   
+}
+
+li{
+    display: inline-block;
+    padding: 8px 0px;
+}
+
+nav li:first-child{
+    margin-left: 50px;
+}
+
+nav li i{
+    margin-right: 10px;
+    
+}
+
+
+div{
+    position: relative;
+}
+
+div i{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    z-index: 1;
+    transform: scale(0);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+}
+
+div:hover i{
+    transform: scale(3.5);
+}
+
+
+
