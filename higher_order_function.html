@@ -1,0 +1,26 @@
+// function fun(x,func){
+//     console.log(x);
+//     func();
+// }
+
+
+// function innerfgun(){
+//     console.log("harsh");
+// }
+
+// fun(87,innerfgun);//hof=higher order function
+
+
+function fun(){
+    console.log("harsh");
+
+    function fun1(){
+        console.log("chaturvedi");
+    }
+
+    return fun1;
+}
+
+const v=fun();
+console.log(v);
+
