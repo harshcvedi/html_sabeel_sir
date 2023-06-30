@@ -1,0 +1,64 @@
+
+// function fun(name,age){
+//     this.name=name;
+//     this.age=age;
+//  }
+
+//  fun('kartik',25);
+
+
+
+//constructor function
+function Person(name,age){
+     
+    this.name=name;
+    this.age=age;
+    
+}
+
+Person.prototype.sayHello=function (){
+    console.log(`hello from ${this.name}`);
+}
+
+const p1=new Person('kartik',25);//so from new keyword 
+//a new object p1 is created and ..."this" word is now 
+//referenec to this p1 object 
+//or p1 m ab name,age property create 
+//hogi or usme kartik and 25 aa jayega
+//if new keyword nhi denge toh "this "ki binding
+//window global object ker saath hogi
+
+
+
+
+
+// const person ={
+//     name:'kartik',
+//     age:25,
+//     isAdult:true
+// }
+
+
+// let p1 = Object.create(person);//object.create takes the blueprint of the object person
+// //on console....if we write p1 then it gives an empty object....but if we 
+// //write p1.name on console....it gives 'kartik'
+
+
+// let p2=Object.create(p1);
+
+
+const person ={
+    name:'kartik',
+    age:25,
+    isAdult:true,
+    sayHello:function(){
+        console.log('hello from kartik');
+    }
+
+}
+
+let p1=Object.create(person);
+let p2=Object.create(p1);
+
+
+
