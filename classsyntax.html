@@ -1,0 +1,74 @@
+
+
+// class Person{
+
+
+//     constructor(name,age){//it is a constructor function
+//         this.name=name;
+//         this.age=age;
+//     }
+
+
+//     sayName(){//only function name without function keyword we can create it
+//         return this.name;
+//     }
+
+
+
+// }
+
+
+// const p1=new Person('kartik',26);
+
+
+
+//----------------------
+
+class Car{
+
+
+    constructor(name,color,price){
+        this.name=name;
+        this.color=color;
+        this.price=price;
+    }
+
+    getcarname(){
+        return this.name;
+    }
+
+    get getprice(){//getteer and setter are the method not a function
+        return this.price;
+    }
+
+    set setprice(newprice){//c1.setprice=55555
+        this.price=newprice;
+    }
+
+
+}
+
+
+class RacingCar extends Car{
+
+
+    constructor(name,color,price,maxspeed,isdescbrake){
+
+        super(name,color,price)//calling parent class constructor
+
+        this.maxspeed=maxspeed;
+        this.isdescbrake=isdescbrake;
+    }
+
+    get getmaxspeed(){
+        return this.maxspeed;
+    }
+
+
+
+}
+
+//let c1=new Car('audi','black',2000000);
+
+const r1=new RacingCar('bmw','red',2555555,400,true);
+
